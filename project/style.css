@@ -1,0 +1,265 @@
+*{ 
+margin:0; 
+padding: 0; 
+} 
+body{ 
+font-family: 'Cormorant Garamond', sans-serif; 
+background-image: url("C:/xampp/htdocs/project/img/font3.JPG"); 
+background-size: no-repeat;
+background-attachment: fixed; 
+background-size: contain; 
+margin: 20 px;
+vertical-align: middle;
+} 
+
+
+				/*header*/
+.preview{
+margin:auto; 
+background-color:#000010;
+opacity: 80%;	
+text-align:center;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+height: 100vh;
+width: 100wh;
+}
+.preview h2{
+font-family: 'Pacifico', sans-serif;
+}
+.header_variants{
+margin:auto; 
+background-color:#6a9cff;
+text-align:center;
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+height: 50vh;
+width: 100wh;
+}
+.header_variants h1{
+font-size: 30px;
+}
+.header_que{
+margin:auto; 
+background-color:#6a9cff;
+height: 10vh;
+width: 100wh;
+}
+.header_que2{
+margin:auto; 
+background-color:#F137A6;
+height: 10vh;
+width: 100wh;
+}
+
+
+				/*body*/
+main{ 
+color:#111111; 
+text-align:left;
+background-color:#dfeaff;
+/*background-image: url("img/font3.jpg"); */
+/*background-attachment: fixed; */
+background-size: 100%; 
+padding-bottom:50px;
+min-height: 80vh;
+height:auto
+}
+main h3{
+padding: 30px;
+text-align:center;	
+}
+.variant_box{
+margin:20px;
+width:100%; /*ширина */
+max-width:800px;/*максимальная ширина */
+padding:20px 20px; /*внутренние отступы*/
+background:#dfeaff; /*фоновый цвет*/
+box-shadow:0 0 10px #F137A6; /*тень*/
+color:#111111; /*цвет шрифта*/
+text-align:center; /*выравнивание текста по центру*/	
+margin:auto;  /*выравнивание блока по центру и отступы сверху и снизу*/
+}
+.variant_box{
+font-size:20px;
+font-weight: bold;
+}
+.start_text{
+padding: 150px 400px;
+text-align: justify;
+}
+nav{  
+text-align:center;
+font-size:24px;
+}
+.start_but {
+text-decoration: none;
+display: inline-block;
+width: 270px;
+height: 48px;
+line-height: 45px;
+border-radius: 45px;
+margin: 50px;
+font-size: 14px;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 3px;
+font-weight: 600;
+background: #6a9cff;
+box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+transition: .3s;
+}
+.start_but:hover {
+color:black; 
+text-decoration-line: blink;
+background: white;
+box-shadow: 0 15px 20px #6a9cff;
+transform: translateY(-7px);
+}
+.glow-button {
+font-family: 'Cormorant Garamond', sans-serif; 
+font-size: 20px;
+border:none;
+text-decoration: none;
+display: inline-block;
+padding: 15px 30px;
+margin: 10px 20px;
+border-radius: 10px;
+box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+font-weight: bold;
+letter-spacing: 2px;
+color: white;
+transition: .15s ease-in-out;
+}
+.glow-button:hover {
+box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+color: #F137A6;
+background-color: #dfeaff
+}
+.question_text{
+padding: 10px 400px;
+text-align: center;
+}
+.result_text{
+padding: 10px 300px;
+text-align: center;
+}
+.question_text h3{
+padding: 30px;
+}
+.answer_but {
+font-family: 'Cormorant Garamond', sans-serif; 
+font-size: 20px;
+border:none;
+text-decoration: none;
+display: inline-block;
+padding: 15px 30px;
+margin: 10px 20px;
+border-radius: 10px;
+box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+font-weight: bold;
+letter-spacing: 2px;
+color: white;
+transition: .15s ease-in-out;
+}
+.answer_but:hover {
+box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+color: #F137A6;
+background-color: #dfeaff
+}
+.selectic{
+padding: 150px 150px;
+text-align: center;
+}
+.dropdown {
+margin: 20px;
+width: auto;
+height: 40px;
+border: 1px solid ;
+text-align:center;
+font-size: 20px;
+color: #dfeaff;
+background-color: #6a9cff;
+border-radius: 30px;
+box-shadow: 4px 4px 7px #6a9cff;
+font-family: 'Cormorant Garamond', sans-serif; 
+}
+.sel_but{
+padding: 10px; 
+text-decoration-line: blink;
+color: black;
+font-family: 'Cormorant Garamond', sans-serif; 
+font-size: 20px;
+border:none;
+background-color:#6a9cff;
+}
+.sel_but:hover{ 
+font-size:24px;
+color: #F137A6;
+box-shadow:1px 5px 10px -5px #F137A6; 
+transition:all 0.3s ease; 
+background-color: #F137A6;
+color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				/*footer*/
+.footer_but{
+padding-bottom:20px;
+}
+.footer_but a{ /*внутри обводки*/
+padding: 10px; 
+border: 2px solid #6a9cff;
+text-decoration-line: blink;
+}
+.footer_but a:hover{ 
+padding: 14px 16px; 
+border-bottom:2px solid black; 
+background-color:#6a9cff; 
+box-shadow:1px 5px 10px -5px black; 
+transition:all 0.3s ease; 
+}
+.logo{ 
+width:100%; 
+display: flex; 
+justify-content: center; 
+} 
+.graficlogo{ 
+max-width:20%; 
+box-sizing: border-box; 
+} 
+footer{ 
+width:100%; 
+height:auto; 
+background:#111111; 
+margin:0 auto; 
+text-align:center; 
+padding-top:30px;
+padding-bottom:20px;
+background-color:#111111;
+} 
+footer a{ 
+color:white; 
+font-size:15px; 
+padding: 0px 16px; 
+}
+
+
+
+
