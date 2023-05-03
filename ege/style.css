@@ -5,9 +5,9 @@ padding: 0;
 body{ 
 font-family: 'Cormorant Garamond', sans-serif; 
 background-image: url("img/font3.jpg"); 
-background-size: no-repeat;
-background-attachment: fixed; 
-background-size: contain; 
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
 margin: 20 px;
 vertical-align: middle;
 } 
