@@ -10,8 +10,9 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 margin: 20 px;
 vertical-align: middle;
-} 
+}
 
+				/*header*/
 .header-start{
   position: relative;
   width: 100%;
@@ -20,6 +21,25 @@ vertical-align: middle;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.header-start img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  
+}
+.header-start h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #fff;
+  z-index: 2;
 }
 
 .header-overlay {
@@ -32,44 +52,6 @@ vertical-align: middle;
   z-index: 1;
 }
 
-.header-start img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  
-}
-
-.header-start h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: #fff;
-  z-index: 2;
-}
-
-
-				/*header*/
-.preview{
-margin:auto; 
-background-color:#000010;
-opacity: 80%;	
-text-align:center;
-display: flex;
-flex-direction:column;
-justify-content:center;
-align-items: center;
-height: 100vh;
-width: 100wh;
-}
-.preview h2{
-font-family: 'Pacifico', sans-serif;
-}
 .header_variants{
 margin:auto; 
 background-color:#6a9cff;
@@ -84,12 +66,14 @@ width: 100wh;
 .header_variants h1{
 font-size: 30px;
 }
+
 .header_que{
 margin:auto; 
 background-color:#6a9cff;
 height: 10vh;
 width: 100wh;
 }
+
 .header_que2{
 margin:auto; 
 background-color:#F137A6;
@@ -97,46 +81,31 @@ height: 10vh;
 width: 100wh;
 }
 
-
 				/*body*/
 main{ 
 color:#111111; 
 text-align:left;
-/*background-color:#dfeaff;
-background-image: url("img/font3.jpg"); */
-/*background-attachment: fixed; */
 background-size: 100%; 
 padding-bottom:50px;
 min-height: 80vh;
 height:auto
 }
+
 main h3{
 padding: 30px;
 text-align:center;	
 }
-.variant_box{
-margin:20px;
-width:100%; /*ширина */
-max-width:800px;/*максимальная ширина */
-padding:20px 20px; /*внутренние отступы*/
-background:#dfeaff; /*фоновый цвет*/
-box-shadow:0 0 10px #F137A6; /*тень*/
-color:#111111; /*цвет шрифта*/
-text-align:center; /*выравнивание текста по центру*/	
-margin:auto;  /*выравнивание блока по центру и отступы сверху и снизу*/
-}
-.variant_box{
-font-size:20px;
-font-weight: bold;
-}
-.start_text{
-padding: 150px 30%;
-text-align: justify;
-}
+
 nav{  
 text-align:center;
 font-size:24px;
 }
+
+.start_text{
+padding: 150px 30%;
+text-align: justify;
+}
+
 .start_but {
 text-decoration: none;
 display: inline-block;
@@ -161,6 +130,28 @@ background: white;
 box-shadow: 0 15px 20px #6a9cff;
 transform: translateY(-7px);
 }
+
+.variant_box{
+margin:20px;
+width:100%;
+max-width:800px;
+padding:20px 20px;
+background:#dfeaff;
+box-shadow:0 0 10px #F137A6;
+color:#111111;
+text-align:center;
+margin:auto;
+}
+.variant_box{
+font-size:20px;
+font-weight: bold;
+}
+
+.ns_img{
+width: 25wh;
+height: 25vh;
+}
+
 .glow-button {
 font-family: 'Cormorant Garamond', sans-serif; 
 font-size: 20px;
@@ -181,41 +172,25 @@ box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
 color: #F137A6;
 background-color: #dfeaff
 }
+
 .question_text{
 padding: 10px 400px;
-text-align: center;
-}
-.result_text{
-padding: 10px 300px;
 text-align: center;
 }
 .question_text h3{
 padding: 30px;
 }
-.answer_but {
-font-family: 'Cormorant Garamond', sans-serif; 
-font-size: 20px;
-border:none;
-text-decoration: none;
-display: inline-block;
-padding: 15px 30px;
-margin: 10px 20px;
-border-radius: 10px;
-box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
-font-weight: bold;
-letter-spacing: 2px;
-color: white;
-transition: .15s ease-in-out;
+
+.result_text{
+padding: 10px 300px;
+text-align: center;
 }
-.answer_but:hover {
-box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
-color: #F137A6;
-background-color: #dfeaff
-}
+
 .selectic{
 padding: 150px 150px;
 text-align: center;
 }
+
 .dropdown {
 margin: 20px;
 width: auto;
@@ -229,65 +204,8 @@ border-radius: 30px;
 box-shadow: 4px 4px 7px #6a9cff;
 font-family: 'Cormorant Garamond', sans-serif; 
 }
-.sel_but{
-padding: 10px; 
-text-decoration-line: blink;
-color: black;
-font-family: 'Cormorant Garamond', sans-serif; 
-font-size: 20px;
-border:none;
-background-color:#6a9cff;
-}
-.sel_but:hover{ 
-font-size:24px;
-color: #F137A6;
-box-shadow:1px 5px 10px -5px #F137A6; 
-transition:all 0.3s ease; 
-background-color: #F137A6;
-color: white;
-}
-.ns_img{
-width: 25wh;
-height: 25vh;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 				/*footer*/
-.footer_but{
-padding-bottom:20px;
-}
-.footer_but a{ /*внутри обводки*/
-padding: 10px; 
-border: 2px solid #6a9cff;
-text-decoration-line: blink;
-}
-.footer_but a:hover{ 
-padding: 14px 16px; 
-border-bottom:2px solid black; 
-background-color:#6a9cff; 
-box-shadow:1px 5px 10px -5px black; 
-transition:all 0.3s ease; 
-}
-.logo{ 
-width:100%; 
-display: flex; 
-justify-content: center; 
-} 
-.graficlogo{ 
-max-width:20%; 
-box-sizing: border-box; 
-} 
 footer{ 
 width:100%; 
 height:auto; 
@@ -298,12 +216,38 @@ padding-top:30px;
 padding-bottom:20px;
 background-color:#111111;
 } 
+
 footer a{ 
 color:white; 
 font-size:15px; 
 padding: 0px 16px; 
 }
 
+.footer_but{
+padding-bottom:20px;
+}
 
+.footer_but a{
+padding: 10px; 
+border: 2px solid #6a9cff;
+text-decoration-line: blink;
+}
 
+.footer_but a:hover{ 
+padding: 14px 16px; 
+border-bottom:2px solid black; 
+background-color:#6a9cff; 
+box-shadow:1px 5px 10px -5px black; 
+transition:all 0.3s ease; 
+}
 
+.logo{ 
+width:100%; 
+display: flex; 
+justify-content: center; 
+} 
+
+.graficlogo{ 
+max-width:20%; 
+box-sizing: border-box; 
+} 
